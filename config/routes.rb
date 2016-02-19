@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
   root 'users#index'
   resources :users
+  # user login routes
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
+
+  get '/reg' => 'reg#new'
+  post '/reg' => 'reg#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
