@@ -48,5 +48,7 @@ end
 group :production do
   # Postgres gem for Heroku deployment
   gem 'pg'
+  # Robust Webserver for Heroku Deployment
+  gem 'thin'
 
 end
