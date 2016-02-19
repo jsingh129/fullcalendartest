@@ -45,3 +45,8 @@ group :development do
   gem 'spring'
 end
 
+group :production do
+  # Postgres gem for Heroku deployment
+  gem 'pg'
+
+end
