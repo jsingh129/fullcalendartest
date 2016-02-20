@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
-  root 'users#index'
+  #get 'sessions/new'
+
+  #get 'reg/new'
+
   resources :users
-  # user login routes
+
+  root 'users#index'
+
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
