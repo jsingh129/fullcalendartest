@@ -8,15 +8,6 @@
 </head>
 <body>
 
-<% if current_user %>
-<br>
-<br>
-<br>
-  Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
-<% else %>
-  <%= link_to 'Login', '/login' %> | <%= link_to 'Register', '/reg' %>
-  
-<% end %>
 <br>
 <br>
 <% flash.each do |message_type, message| %>

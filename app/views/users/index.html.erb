@@ -64,8 +64,8 @@
 
                 </ul>
                 <ul class="nav navbar-nav navbar-left">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Signed in as </a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Signed in as <%= current_user.name %></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> <%= link_to "Logout", '/logout' %></a></li>
                 </ul>
 
             </div>
