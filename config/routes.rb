@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'events/index'
+
   #get 'sessions/new'
 
   #get 'reg/new'
