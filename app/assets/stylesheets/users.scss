@@ -20,10 +20,11 @@ body {
 }
 
 .nav a {
-    color:#ffffff !important;
+    color:00ccff !important;
 }
 .navbar-header a {
-    color:#ffffff !important;
+    opacity: 0.4;
+    color:00ccff !important;
     padding-right:100px;
 }
 
@@ -84,6 +85,10 @@ section {
     padding-bottom:40px;
 }
 
+.image{
+  position:center;
+  padding:350px 0px 200px 540px;
+}
 
 /*=======================================
     COLOR CODES
@@ -107,7 +112,7 @@ section {
 .head-main {
     font-size:120px !important;
     font-weight:900!important;
-    color:#585858!important;
+    color:#00ccff!important;
     padding:200px 20px 20px 20px;
 }
 
@@ -119,7 +124,7 @@ section {
 nav {
 	position: absolute;
 	width: 100%;
-    background: #fff;
+    background: 00ccff;
     z-index:99;
 }
 .fixed {
@@ -128,6 +133,7 @@ nav {
 	min-height: 50px; 
 	z-index: 99;
 }
+
 
 .navbar-inverse {
 background-color: #525252;
@@ -172,9 +178,14 @@ margin-bottom:20px;
 ==================================================*/
 
 #footer {
-    background-color:#000;
-    color:#fff;
+    opacity: 0.4;
+    position:fixed;
     padding:20px 50px 20px 50px;
     text-align:right;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;
+
 }
 
