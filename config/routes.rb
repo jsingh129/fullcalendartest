@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   #get 'reg/new'
 
   resources :users
-
+  resources :events
   root 'users#index'
 
   get '/login' => 'sessions#new'
