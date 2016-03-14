@@ -33,9 +33,14 @@ gem 'bootstrap'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+<<<<<<< HEAD
 gem 'simple_calendar'
 # Use Simple Calendar to generate calendars
 gem 'rspec'
+=======
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
+>>>>>>> f18a3644cd45d2ff1394d8a30a87b603739df469
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
