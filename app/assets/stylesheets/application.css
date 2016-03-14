@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require fullcalendar
  */
 /*!
  * Bootstrap v3.1.1 (http://getbootstrap.com)

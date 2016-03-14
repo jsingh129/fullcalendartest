@@ -14,3 +14,18 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require moment
+//= require fullcalendar
+
+$(document).ready(function() {
+    $('#calendar').fullCalendar({
+        header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,agendaWeek,agendaDay'
+        },
+        defaultView: 'month',
+        slotMinutes: 15,
+        events: '/events.json'
+        });
+});
