@@ -5,5 +5,8 @@ class RegControllerTest < ActionController::TestCase
     get :new
     assert_response :success
   end
-
+  
+  def should_get_new 
+  	assert true
+  end
 end

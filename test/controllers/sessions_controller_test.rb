@@ -6,4 +6,8 @@ class SessionsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  def should_get_new
+  	assert true
+  end
+
 end
