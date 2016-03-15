@@ -19,6 +19,7 @@
 
 $(document).ready(function() {
     $('#calendar').fullCalendar({
+        events: '/events.json',
         header: {
         left: 'prev,next today',
         center: 'title',
@@ -26,6 +27,5 @@ $(document).ready(function() {
         },
         defaultView: 'month',
         slotMinutes: 15,
-        events: '/events.json'
         });
 });
