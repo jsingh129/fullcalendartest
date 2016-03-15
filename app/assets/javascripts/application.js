@@ -12,13 +12,17 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
 //= require moment
 //= require fullcalendar
+//= require turbolinks
+//= require bootstrap
+//= require_tree .
+
+
 
 $(document).ready(function() {
     $('#calendar').fullCalendar({
+        events: '/events.json',
         header: {
         left: 'prev,next today',
         center: 'title',
@@ -26,6 +30,5 @@ $(document).ready(function() {
         },
         defaultView: 'month',
         slotMinutes: 15,
-        events: '/events.json'
         });
 });

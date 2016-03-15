@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.2.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
@@ -33,14 +33,10 @@ gem 'bootstrap'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-<<<<<<< HEAD
-gem 'simple_calendar'
-# Use Simple Calendar to generate calendars
-gem 'rspec'
-=======
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
->>>>>>> f18a3644cd45d2ff1394d8a30a87b603739df469
+gem 'rspec'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -62,4 +58,5 @@ group :production do
   gem 'pg'
   # Thin webserver for heroku production environment
   gem 'thin'
+  gem 'rails_12factor'
 end
