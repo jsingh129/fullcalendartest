@@ -36,7 +36,7 @@ gem 'bootstrap'
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
 gem 'rspec'
-gem 'rails_12factor'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -58,4 +58,5 @@ group :production do
   gem 'pg'
   # Thin webserver for heroku production environment
   gem 'thin'
+  gem 'rails_12factor'
 end
