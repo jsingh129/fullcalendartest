@@ -5,6 +5,24 @@ Rails.application.routes.draw do
   #get 'sessions/new'
 
   #get 'reg/new'
+  
+  get "/messages" => redirect("/conversations")
+  resources :messages do
+  member do
+    post :new
+  end
+end
+resources :conversations do
+  member do
+    post :reply
+    post :trash
+    post :untrash
+  end
+ collection do
+    get :trashbin
+    post :empty_trash
+ end
+end
 
   resources :users
   resources :events

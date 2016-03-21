@@ -1,4 +1,5 @@
 class Reg < ActiveRecord::Base
+    acts_as_messageable
 	# to make sure the password is legit
   before_save { self.email = email.downcase }
   validates :name,  presence: true, length: { maximum: 50 }
@@ -9,6 +10,7 @@ class Reg < ActiveRecord::Base
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }
   
+  def mailboxer_email(object)
+  end
   
-
 end
