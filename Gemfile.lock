@@ -213,7 +213,7 @@ DEPENDENCIES
   jquery-rails
   mailboxer
   momentjs-rails
-  paperclip (~> 3.0.0)
+  paperclip
   pg
   rails (= 4.2.5.1)
   rails_12factor
