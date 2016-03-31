@@ -41,6 +41,10 @@ gem 'rspec'
 
 gem 'dashing-rails'
 gem 'puma'
+#for dash borad
+
+gem 'omniauth-facebook'
+
 
 
 group :development, :test do
