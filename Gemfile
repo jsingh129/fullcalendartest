@@ -27,7 +27,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'mailboxer'
 gem 'autoprefixer-rails'
 
-gem 'paperclip', '~>3.0.0'
+gem 'paperclip'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
