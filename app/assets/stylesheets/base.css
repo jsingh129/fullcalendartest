@@ -1,0 +1,454 @@
+/*our css code*/
+
+
+/*Home Page*/
+
+html, body {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Helvetica, sans-serif;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color:black;
+  border-left:1px solid black;
+  padding-left:5px;
+}
+
+
+
+a:hover
+{
+	color:red;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.header {
+  background-color: gray;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 60px;
+  overflow: auto;
+}
+
+.content {
+  min-height: 100%;
+  clear: both;
+  overflow: hidden;
+}
+
+.footer {
+  background: #e6f3f7;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  clear:both;
+}
+
+#facebook {
+  margin-left: 15px;
+  margin-right: 15px;
+  border:none;
+}
+
+#twitter
+{
+	border:none;
+}
+.navbar {
+  float: right;
+}
+.navbar ul{
+  margin-top: 20px;
+}
+.navbar li {
+  display: inline;
+}
+
+.navbar a:hover
+{
+	color:black;
+}
+.navbar li a {
+  margin-right: 15px;
+  color: white;
+  border:none;
+}
+
+.mainpage
+{
+	margin-bottom:100px;
+}
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+.section.group {
+  padding-top: 20px;
+}
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+  margin-top: -10px;
+}
+.col:first-child {
+  margin-left: 0;
+}
+.col li {
+  padding-bottom: 10px;
+}
+.col li a {
+  color: black;
+  border:none;
+}
+.col li a:hover {
+  color: gray;
+}
+.group:before, .group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.span_4_of_4 {
+  width: 100%;
+}
+.span_3_of_4 {
+  width: 74.6%;
+}
+.span_2_of_4 {
+  width: 49.2%;
+}
+.span_1_of_4 {
+  width: 23.8%;
+}
+.span_1_of_4 h3 {
+  margin-bottom: 10px
+}
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%;
+  }
+  .span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 {
+    width: 100%;
+  }
+}
+.copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+
+
+
+/* William's Homepage CSS */
+
+.welcome2
+{
+	padding-bottom:20px;
+}
+.welcomeImg
+{
+	margin-left:-100px;
+}
+
+.welcome {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+.welcome a img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slideshow a img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.homeparagraph {
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+.mainpage
+{
+	 margin-bottom:300px;
+}
+
+/* End of William's Homepage CSS */
+
+/* William's Restaurant Image Page CSS */
+#row1{
+  margin-bottom: 30px;
+}
+#row2{
+  margin-bottom: 30px;
+}
+
+.restaurantpage
+{
+	clear:both;
+	margin-bottom:250px;
+}
+.restaurantpage h1{
+  margin-left: 20px;
+}
+.restaurantpage ul img{
+  padding-right: 30px;
+}
+.restaurantpage ul{
+  margin-left: 30px;
+  padding-left:50px;
+}
+.restaurantpage ul li{
+  display: inline;
+  list-style-type: none;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%;
+  }
+}
+
+/* Restaurant Pages */
+
+.restaurant-page
+{
+	clear:both;
+	height:1050px;
+	overflow:hidden;
+	margin-bottom:150px;
+}
+.restaurants-nav
+{
+	background-color: #19315B;
+	float:left;
+	height:100%;
+	width: 20%;
+	padding-bottom:400px;
+    overflow:hidden;
+}
+
+
+.restaurants-nav li
+{
+	padding-top:20px;
+	padding-bottom:20px;
+	border-bottom: 2px dotted white;
+	margin-left:-40px;
+}
+
+.restaurants-nav li:last-child
+{
+	border:none;
+}
+
+.restaurants-nav li:first-child
+{
+	margin-top:-20px;
+}
+
+.restaurants-nav li:hover 
+{
+	background-color:#71b0dc;
+}
+
+.restaurants-nav a
+{
+	color:white;
+	font-size:1.25em;
+	padding-left:20px;
+}
+
+
+.main-info
+{   width: 76%;
+	margin: 0 auto;
+	float:right;
+	overflow:hidden;
+	
+}
+
+.main-info h2
+{
+	padding-top:20px;
+}
+
+.contact-info
+{
+	float:right;
+	width:30%;
+}
+
+.right-info
+{
+	width:60%;
+	float:left;
+	padding-left:30px;
+	padding-top:10px;
+}
+
+.right-info h1
+{
+	color: #19315B;
+	border-bottom:1px solid black;
+	background:#f2f2f2 url(images/5.png);
+	background-repeat:no-repeat;
+	background-position:right;
+}
+
+.map
+{
+    float:right;
+	padding-top:25px;
+	overflow:hidden;
+	width:230px;
+}
+
+.tableBox
+{
+	float:left;
+	width:50%;
+}
+
+
+.contact-info h3
+{
+	padding-left:80px;
+	padding-top:60px;
+}
+
+.right-info p 
+{
+	padding-top:20px;
+	margin-bottom:50px;
+	clear:both;
+}
+
+.contact-info a
+{
+	border:1px solid #0868A8;
+	background-color:#9AC7E6;
+	padding: 20px 75px 20px 75px;
+	text-decoration:none;
+	color:black;
+	margin-left:80px;
+	font-size:1.25em;
+}
+
+.contact-info ul
+{
+	padding-left:30px;
+}
+
+.contact-info li
+{
+	padding-left:50px;
+	padding-bottom:10px;
+}
+
+.contact-info a:hover
+{
+	background-color: #d7e9f5;
+}
+
+.contact-info img 
+{
+	padding-top:30px;
+	padding-bottom:80px;
+	padding-left:80px;
+}
+
+
+
+table
+{
+	padding-top:20px;
+	width:300px;
+}
+
+th td
+{
+	padding-left:10px;
+}
+
+thead
+{
+	background-color:#d7e9f5;
+}
+
+tbody td
+{
+   padding-left:15px;
+   padding-top:10px;
+   
+}
+
+tbody tr:nth-child(even)
+{
+	background-color:#f3f8fc;
+}
+
+/*thanks page */
+.thanks {
+  margin-top: 80px;
+  min-height: 100%;
+  clear: both;
+  overflow: hidden;
+  margin-bottom:100px;
+}
+
+
+.tickPic img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+.thankYou {
+ margin: auto;
+ width: 80%;
+  color:gray;
+  font-size:200%;
+  text-align:center;
+}
+
+
+
+.backToLogin {
+    margin: auto;
+    width: 20%;
+    padding: 10px;
+	 text-align:center;
+}
+
+
+

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Dashing::Engine, at: Dashing.config.engine_path
   resources :events
   get 'events/index'
 
