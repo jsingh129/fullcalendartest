@@ -28,7 +28,7 @@ gem 'mailboxer'
 gem 'autoprefixer-rails'
 gem 'font-awesome-rails'
 
-gem 'paperclip', '~>3.0.0'
+gem 'paperclip'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -39,6 +39,13 @@ gem 'bootstrap'
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
 gem 'rspec'
+
+gem 'dashing-rails'
+gem 'puma'
+#for dash borad
+
+gem 'omniauth-facebook'
+
 
 
 group :development, :test do

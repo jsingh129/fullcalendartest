@@ -1,13 +1,30 @@
+<!DOCTYPE html>
+<html land="en">
+<head>
+  <meta charset="utf-8">
+    <link href="base.css" rel="stylesheet" type="text/css">
+    <link href="reg.scss" rel = "stylesheet" type = "text/css">
+</head>
 
-<h1>Login</h1>
+<body>
+  <div class="joinUs-content">
 
-<%= form_tag '/login' do %>
+      <h2>Login</h2> 
 
-  Email: <%= text_field_tag :email %>
-  <br>
-  Password: <%= password_field_tag :password %>
-  <br>
-  <%= submit_tag "Submit" %>
+      <div class = "sign-up">
+        <%= form_tag '/login' do %>
+        <div class="field" >
 
-<% end %>
+          Email:<br> <%= text_field_tag :email %>
+          </br>
+          Password: <br> <%= password_field_tag :password %>
+          </br>
+          <%= submit_tag "Submit" %>
+        
+        </div>
+
+        <% end %>
+      </div>
+  </div>
+</body>
 
