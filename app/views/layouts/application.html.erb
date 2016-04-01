@@ -53,16 +53,16 @@
                   
                   <% if current_user %>
                   <div class="btn-group" role="group">
-                  <li><span class="glyphicon glyphicon-user"></span> Signed in as <%= current_user.name %></li>
+                  <li><i class="fa fa-user"></i></span> Signed in as <%= current_user.name %></li>
                   </div>
                   <div class="btn-group" role="group">
-                  <li><span class="glyphicon glyphicon-log-out"></span> <%= link_to "Logout", '/logout' %></li>
+                  <li><i class="fa fa-sign-out"></i></span> <%= link_to "Logout", '/logout' %></li>
                   </div>
                   
                   <% else %>
                   
                   <div class="btn-group" role="group">
-                    <li><a href="#"><span class="glyphicon glyphicon-user "></span> 
+                    <li><i class="fa fa-user"></i> 
                     
                     <%= link_to 'Register', '/reg' %></a>
                     
@@ -70,7 +70,7 @@
                   </div>
                    
                   <div class="btn-group" role="group"> 
-                      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>
+                      <li><i class="fa fa-sign-in"></i>
                    
                         <%= link_to 'Login', '/login' %></a>
                       
@@ -93,17 +93,8 @@
 
 <div class="image">
 
-    <%= image_tag ("Web LOGO.png"), size:"200x70" %>
+    <%= image_tag ("Web_LOGO.png"), size:"200x70" %>
 </div>
-<section id="footer">
-
-    <div class="container">
-    <p style="text-align:center;"><strong>Contact us:</strong><span class="glyphicon glyphicon-envelope"></span><strong>    CMPT276Group7@gotmail.com</strong>
-    </p>
-
-
-    </div>
-</section>
 
 </body>
 </html>
