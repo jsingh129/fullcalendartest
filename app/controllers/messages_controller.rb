@@ -9,6 +9,7 @@ class MessagesController < ApplicationController
 
 # GET /message/new
   def new
+  # @reg = Reg.find_by_email(params[:email])  
   @reg = Reg.find(params[:reg])
   @message = current_user.messages.new
     # display form
@@ -16,7 +17,8 @@ class MessagesController < ApplicationController
 
   # POST /message/create
   def create
-    @recipient = Reg.find_by_email(params[:email])
+    @recipient = Reg.find_by(id: params[:reg])
+    # @recipient = Reg.find(session[:reg_id])
     current_user.send_message(@recipient, params[:body], params[:subject])
     flash[:notice] = "Message has been sent!"
     redirect_to :conversations

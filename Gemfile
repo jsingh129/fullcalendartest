@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 gem 'mailboxer'
 gem 'autoprefixer-rails'
+gem 'font-awesome-rails'
 
 gem 'paperclip', '~>3.0.0'
 

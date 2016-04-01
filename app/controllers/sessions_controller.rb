@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
 # review and edit, copied from login
+  
   def new
   end
 

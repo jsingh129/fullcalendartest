@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :events
   get 'events/index'
 
   #get 'sessions/new'
