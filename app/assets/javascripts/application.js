@@ -19,17 +19,3 @@
 //= require_tree .
 
 
-
-$(document).ready(function() {
-    $('#calendar').fullCalendar({
-        events: '/events.json',
-        header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'month,agendaWeek,agendaDay'
-        },
-        height: 850,
-        defaultView: 'month',
-        slotMinutes: 15,
-        });
-});
