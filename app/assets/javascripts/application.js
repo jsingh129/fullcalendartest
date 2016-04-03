@@ -28,6 +28,7 @@ $(document).ready(function() {
         center: 'title',
         right: 'month,agendaWeek,agendaDay'
         },
+        height: 850,
         defaultView: 'month',
         slotMinutes: 15,
         });
