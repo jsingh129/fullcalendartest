@@ -1,9 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-<br>
+    <title><%= yield :title %></title>
+       <%= stylesheet_link_tag 'dashing/application' %>
+    <%= javascript_include_tag 'dashing/application' %>
+   
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="/favicon.ico">
+  </head>
 
-<h1>DASH BOARD</h1>
 
-<h1>Sorry Work in Progress</h1>
-<br>
+
+<script type='text/javascript'>
+$(function() {
+Dashing.gridsterLayout('[{"col":1,"row":2,"size_x":2,"size_y":1},{"col":1,"row":1,"size_x":1,"size_y":1}]')
+});
+</script>
+<% content_for :title do %>
+  My super sweet dashboard
+<% end %>
+
+
+
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="welcome" data-view="Text" data-title="Hello" data-text="Calendar is coming." data-moreinfo="Protip: You can drag the widgets around!"></div>
+    </li>
+        
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+      <i class="icon-time icon-background"></i>
+    </li>
+
+
+
+
+
+  </ul>
+  <center><div style="font-size: 12px">Try this: curl -X PUT 'http://<%= request.host %>:<%= request.port %>/dashing/widgets/welcome' -d "widget[text]=Dashing is awesome"</div></center>
+</div>
+
+
+
 
 

@@ -20,6 +20,11 @@
     <![endif]-->
 </head>
 
+ <% if current_page?(:controller => 'users', :action => 'index') || current_page?(root_path) %>
+      <div id="container">
+      <%= yield %>
+    </div>
+    <% end %>
 
 
 <tbody>
