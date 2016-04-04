@@ -14,7 +14,7 @@ $(document).ready ->
         slotMinutes:30,
         
         eventSources: [{
-            url: '/events',
+            url: '/events.json',
         }]
         
         timeFormat: 'h:mm',

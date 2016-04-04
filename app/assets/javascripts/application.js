@@ -16,6 +16,7 @@
 //= require bootstrap
 //= require moment
 //= require fullcalendar
+//= require events
 //= require_tree .
 
 
