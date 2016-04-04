@@ -19,5 +19,19 @@
 //= require events
 //= require_tree .
 
+$(document).ready(function() {
+    $('#calendar').fullCalendar({
+        header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay'
+            
+        },
+        height: 850,
+        editable: true,
+        events: '/events'
+    });
+});
+
 
 

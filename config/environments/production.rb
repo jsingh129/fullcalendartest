@@ -3,7 +3,7 @@ Rails.application.configure do
 
   # Code is not reloaded between requests.
   config.action_mailer.default_url_options = { :host => "yourhost" }
-  
+  config.assets.precompile += %w(fullcalendar.js)
   config.cache_classes = true
   config.eager_load = true
   config.consider_all_requests_local       = false
