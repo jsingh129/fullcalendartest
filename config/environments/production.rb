@@ -4,14 +4,13 @@ Rails.application.configure do
   # Code is not reloaded between requests.
   config.action_mailer.default_url_options = { :host => "yourhost" }
   
-  config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.svg *.ico *.eot *.ttf)
   config.cache_classes = true
   config.eager_load = true
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
-  config.serve_static_files = true
+  config.serve_static_files = false
   config.assets.js_compressor = :uglifier
-  config.assets.compile = true
+  config.assets.compile = false
   config.assets.digest = true
   config.log_level = :debug
   config.i18n.fallbacks = true

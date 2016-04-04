@@ -36,7 +36,7 @@ gem 'bootstrap'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-
+gem 'turbolinks'
 gem 'momentjs-rails'
 gem 'rspec'
 
