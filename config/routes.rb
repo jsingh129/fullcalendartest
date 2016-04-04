@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :documents
   mount Dashing::Engine, at: Dashing.config.engine_path
   resources :events
 
