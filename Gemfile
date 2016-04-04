@@ -37,6 +37,7 @@ gem 'bootstrap'
 # gem 'capistrano-rails', group: :development
 
 gem 'turbolinks'
+gem 'fullcalendar-rails'
 gem 'momentjs-rails'
 gem 'rspec'
 
@@ -67,5 +68,6 @@ group :production do
   # PostgreSQL gem for heroku production environment
   gem 'pg'
   # Thin webserver for heroku production environment
+  gem 'thin'
   gem 'rails_12factor'
 end
