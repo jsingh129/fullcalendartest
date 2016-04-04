@@ -67,6 +67,5 @@ group :production do
   # PostgreSQL gem for heroku production environment
   gem 'pg'
   # Thin webserver for heroku production environment
-  gem 'thin'
   gem 'rails_12factor'
 end
