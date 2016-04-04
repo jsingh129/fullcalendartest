@@ -19,16 +19,5 @@
 //= require events
 //= require_tree .
 
-$(document).on('page:change',function() {
-    $('#calendar').fullCalendar({
-        header: {
-            left: 'prev,next today',
-            center: 'title',
-            right: 'month,agendaWeek,agendaDay'
-        },
-        height: 850,
-        editable: true,
-        events: '/events'
-    });
-});
+
 

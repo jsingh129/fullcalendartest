@@ -1,4 +1,17 @@
-
+<script>
+    $(document).on('page:change',function() {
+    $('#calendar').fullCalendar({
+        header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay'
+        },
+        height: 850,
+        editable: true,
+        events: '/events'
+    });
+});
+</script>
 <br>
 <br>
 <li><%= link_to 'New Event', new_event_path %></li>
