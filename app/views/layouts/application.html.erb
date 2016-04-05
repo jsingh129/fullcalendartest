@@ -24,6 +24,8 @@
       <div id="container">
       <%= yield %>
     </div>
+    <% else %>
+    <%= yield %>
     <% end %>
 
 
@@ -81,9 +83,6 @@
                       </li>
                       <% end %>
                   </div>
-
-                    
-                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -91,9 +90,8 @@
         <!-- /.container -->
     </nav>
 </tbody>
-<br>
 
-<%= yield %>
+
 
 </body>
 </html>
