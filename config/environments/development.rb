@@ -39,4 +39,5 @@ Rails.application.configure do
   config.allow_concurrency = true
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  ENV["REDISTOGO_URL"] = 'redis://redistogo:24f6e8ed4c0e04cefcc2d3b48c1cb5a8@lab.redistogo.com:9762'
 end
