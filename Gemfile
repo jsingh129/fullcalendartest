@@ -37,8 +37,7 @@ gem 'bootstrap'
 # gem 'capistrano-rails', group: :development
 
 gem 'turbolinks'
-gem 'fullcalendar-rails'
-gem 'momentjs-rails'
+
 gem 'rspec'
 
 gem 'dashing-rails'
@@ -47,7 +46,7 @@ gem 'puma'
 
 gem 'omniauth-facebook'
 
-
+gem 'simple_calendar', '~> 2.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

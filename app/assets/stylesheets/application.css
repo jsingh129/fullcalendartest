@@ -11,7 +11,7 @@
  * file per style scope.
  *
  *= require bootstrap
- *= require fullcalendar
+ *= simple_calendar
  *= require_tree .
  *= require_self
  */
