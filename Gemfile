@@ -42,6 +42,7 @@ gem 'rspec'
 
 gem 'dashing-rails'
 gem 'puma'
+gem 'redis'
 #for dash borad
 
 gem 'omniauth-facebook'
