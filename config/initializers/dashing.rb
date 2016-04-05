@@ -4,7 +4,9 @@ Dashing.configure do |config|
 
   # Scheduler instance.
   # config.scheduler = ::Rufus::Scheduler.new
-
+config.redis_host     = URI.parse(ENV["REDISTOGO_URL"]).host
+config.redis_port     = URI.parse(ENV["REDISTOGO_URL"]).port
+config.redis_password = URI.parse(ENV["REDISTOGO_URL"]).password
   # Redis credentials.
   # See https://devcenter.heroku.com/articles/redistogo to configure redis for heroku.
   # config.redis_host     = '127.0.0.1'
