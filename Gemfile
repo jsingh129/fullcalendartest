@@ -46,7 +46,7 @@ gem 'puma'
 
 gem 'omniauth-facebook'
 
-gem 'fullcalendar-rails', '~> 2.1.1.0'
+gem 'fullcalendar-rails', '~> 2.0.2.0'
 gem 'momentjs-rails'
 
 
