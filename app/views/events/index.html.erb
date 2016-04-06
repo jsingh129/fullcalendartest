@@ -4,17 +4,8 @@
     <li><%= link_to 'New Event', new_event_path %></li>
 
 <br>
-<div class='simple-calendar'>
-    <%= month_calendar events: @events do |day,events| %>
-        <%= day %>
-    
-    <% events.each do |event| %>
-    <div>
-        <%= link_to event.title, event %>
-    </div>
-    <% end %>
-    <% end %>
 
+<div id='calendar'></div>
 
 
 
