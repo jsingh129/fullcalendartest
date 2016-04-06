@@ -10,6 +10,8 @@
       <p><%= text_area_tag :body %></p>
        <%= hidden_field_tag(:reg, "#{@reg.id}") %>
       <%= submit_tag 'Send message', class: "btn btn-primary" %>
+      <br>
+      <%= link_to "Back", conversations_path, {:style=>'margin-top:5mm;', :class => "btn btn-primary"} %>
     <% end %>
   </div>
 </div>
