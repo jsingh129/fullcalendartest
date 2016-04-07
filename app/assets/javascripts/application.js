@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
-//= require moment
 //= require fullcalendar
 //= require events
 //= require_tree .
@@ -26,9 +25,12 @@ $(document).ready(function () {
             center: 'title',
             right: 'month,agendaWeek,agendaDay'
         },
-        editable: true,
+        defaultView: 'month',
+        height: 500,
+        slotMinutes: 15,
         events: '/events.json',
-        height: 750
+        timeFormat: "h:mm t{ - h:mm t} ",
+        dragOpacity: "0.5"
     });
 });
 
